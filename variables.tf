@@ -9,3 +9,9 @@ variable "message" {
   type        = string
   default     = "This is a default message."
 }
+
+variable "input_list" {
+  description = "A list of values to be printed"
+  type        = list(string)
+  default     = ["value1", "value2", "value3"]  # Default values
+}
